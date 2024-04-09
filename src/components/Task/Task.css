@@ -1,6 +1,5 @@
 .todo-list li .icon {
     width: 30px;
-    height: 40px;
     font-size: 34px;
     color: #cc9a9a;
     /*margin: auto 0 11px;*/
@@ -42,7 +41,9 @@
 }
 
 .todo-list li .icon-edit:before {
-    content: '✎';
+    /*content: '✎';*/
+    font-size: 14px;
+    vertical-align: baseline;
 }
 
 .todo-list li .edit {
@@ -70,11 +71,19 @@
     margin-right: 5px;
 }
 
-.icon-pause:after {
-    content: '⏸';
+.icon-pause:before {
+    /*content: '⏸';*/
+    font-size: 18px;
+    vertical-align: middle;
 }
 
-.icon-play:after {
-    content: '▶';
+.icon-play:before {
+    /*content: '▶';*/
+    font-size: 18px;
+    vertical-align: middle;
 }
 
+.description {
+    display: flex;
+    align-items: center;
+}

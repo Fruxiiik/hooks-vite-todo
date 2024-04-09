@@ -62,13 +62,13 @@ export const Task = ({
           <label htmlFor={`toggle-${id}`}>
             <span className="title">{description}</span>
             <span className="description">
-              <button className="icon icon-play" type="button" onClick={onPlay} />
-              <button className="icon icon-pause" type="button" onClick={onPause} />
+              <button className="icon icon-play bi bi-play" type="button" onClick={onPlay} />
+              <button className="icon icon-pause bi bi-pause" type="button" onClick={onPause} />
               {`${minNumber}:${secNumber.toString().padStart(2, '0')}`}
             </span>
             <span className="description">created {time}</span>
           </label>
-          <button className="icon icon-edit" type="button" onClick={onEditing} />
+          <button className="icon icon-edit bi bi-pencil" type="button" onClick={onEditing} />
           <button className="icon icon-destroy bi bi-x" type="button" onClick={onDeleted} />
         </div>
       )}
