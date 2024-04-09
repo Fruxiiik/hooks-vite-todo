@@ -42,5 +42,12 @@
     "prettier": "3.2.5",
     "vite": "^5.2.0",
     "vite-plugin-eslint": "^1.8.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add ."
+    ]
   }
 }

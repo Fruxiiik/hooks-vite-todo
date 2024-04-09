@@ -51,8 +51,15 @@ export const Task = ({
         </form>
       ) : (
         <div className="view">
-          <input id={id} className="toggle" type="checkbox" onChange={onToggleDone} checked={completed} />
-          <label htmlFor={`label-${id}`}>
+          <input
+            id={`toggle-${id}`}
+            name={`toggle-${id}`}
+            className="toggle"
+            type="checkbox"
+            onChange={onToggleDone}
+            checked={completed}
+          />
+          <label htmlFor={`toggle-${id}`}>
             <span className="title">{description}</span>
             <span className="description">
               <button className="icon icon-play" type="button" onClick={onPlay} />
